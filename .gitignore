@@ -1,4 +1,11 @@
+# Ignorar la carpeta de módulos de Node
 node_modules/
+
+# Ignorar la carpeta de distribución
 dist/
+
+# Ignorar archivos de sistema macOS
 .DS_Store
+
+# Ignorar archivo de configuración de entorno
 .env
