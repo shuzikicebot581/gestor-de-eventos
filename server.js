@@ -10,6 +10,12 @@ mongoose.connect('mongodb://localhost/gestor-de-eventos', { useNewUrlParser: tru
   .then(() => console.log('Conectado a MongoDB...'))
   .catch(err => console.log(err));
 
+// Middleware para manejo de errores
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Algo salió mal!');
+});
+
 app.get('/', (req, res) => {
   res.send('Bienvenido al Gestor de Eventos.');
 });
