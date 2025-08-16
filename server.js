@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // Conectar a Mongoose
+// Se conecta a la base de datos MongoDB para gestionar eventos
 mongoose.connect('mongodb://localhost/gestor-de-eventos', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Conectado a MongoDB...'))
   .catch(err => console.log(err));
