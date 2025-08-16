@@ -9,3 +9,6 @@ node_modules/
 
 # Ignorar archivo de configuración de entorno que puede contener información sensible
 .env
+
+# Ignorar archivos de configuración específicos de IDEs (ej: Visual Studio Code)
+.vscode/
