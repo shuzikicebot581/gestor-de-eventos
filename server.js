@@ -11,6 +11,7 @@ mongoose.connect('mongodb://localhost/gestor-de-eventos', { useNewUrlParser: tru
   .catch(err => console.log(err));
 
 // Middleware para manejo de errores
+// Este middleware captura errores que ocurren durante las peticiones y responde con un estado 500
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Algo salió mal!');
