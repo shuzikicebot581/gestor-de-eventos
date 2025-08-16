@@ -1,11 +1,11 @@
-# Ignorar la carpeta de módulos de Node
+# Ignorar la carpeta de módulos de Node, que contiene dependencias del proyecto
 node_modules/
 
-# Ignorar la carpeta de distribución
-dist/
+# Ignorar la carpeta de distribución, que contiene archivos generados para producción
+.dist/
 
-# Ignorar archivos de sistema macOS
+# Ignorar archivos de sistema macOS que no son necesarios para el proyecto
 .DS_Store
 
-# Ignorar archivo de configuración de entorno
+# Ignorar archivo de configuración de entorno que puede contener información sensible
 .env
